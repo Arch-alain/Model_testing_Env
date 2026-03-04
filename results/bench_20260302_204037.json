@@ -1,0 +1,155 @@
+{
+    "session_id": "20260302_204037",
+    "timestamp": "2026-03-02T20:40:37.147001",
+    "model_name": "yolov10_nano.pt",
+    "hardware": {
+        "os": "Linux",
+        "processor": "aarch64",
+        "ram_gb": 7.65,
+        "python_v": "3.12.3"
+    },
+    "test_set_version": "lab_test_mac_01",
+    "results": [
+        {
+            "filename": "po_60.jpg",
+            "inference_time_ms": 84.06966700204066,
+            "preprocess_time_ms": 1.7379169985360932,
+            "postprocess_time_ms": 0.2177499991375953,
+            "detections_count": 0
+        },
+        {
+            "filename": "pv_22.jpg",
+            "inference_time_ms": 88.61575000264565,
+            "preprocess_time_ms": 2.2429590026149526,
+            "postprocess_time_ms": 0.17116600065492094,
+            "detections_count": 2
+        },
+        {
+            "filename": "pf_57.jpg",
+            "inference_time_ms": 85.86674999969546,
+            "preprocess_time_ms": 2.4717919986869674,
+            "postprocess_time_ms": 0.13170800230000168,
+            "detections_count": 1
+        },
+        {
+            "filename": "pv_9.jpg",
+            "inference_time_ms": 77.11229099732009,
+            "preprocess_time_ms": 2.705584000068484,
+            "postprocess_time_ms": 0.16266699822153896,
+            "detections_count": 10
+        },
+        {
+            "filename": "pf_56.jpg",
+            "inference_time_ms": 74.25716600118903,
+            "preprocess_time_ms": 2.3213749991555233,
+            "postprocess_time_ms": 0.11975000234087929,
+            "detections_count": 0
+        },
+        {
+            "filename": "po_58.jpg",
+            "inference_time_ms": 73.44300000113435,
+            "preprocess_time_ms": 1.926166001794627,
+            "postprocess_time_ms": 0.1480409991927445,
+            "detections_count": 2
+        },
+        {
+            "filename": "pf_54.jpg",
+            "inference_time_ms": 81.41787499698694,
+            "preprocess_time_ms": 2.410791999864159,
+            "postprocess_time_ms": 0.11595799878705293,
+            "detections_count": 0
+        },
+        {
+            "filename": "pf_55.jpg",
+            "inference_time_ms": 74.79645799685386,
+            "preprocess_time_ms": 2.0674580009654164,
+            "postprocess_time_ms": 0.18687499687075615,
+            "detections_count": 0
+        },
+        {
+            "filename": "po_59.jpg",
+            "inference_time_ms": 82.34604199969908,
+            "preprocess_time_ms": 2.924833999713883,
+            "postprocess_time_ms": 0.2415409981040284,
+            "detections_count": 1
+        },
+        {
+            "filename": "pv_24.jpg",
+            "inference_time_ms": 74.69291599772987,
+            "preprocess_time_ms": 1.9395000017539132,
+            "postprocess_time_ms": 0.15662499936297536,
+            "detections_count": 5
+        },
+        {
+            "filename": "pf_58.jpg",
+            "inference_time_ms": 80.2782920000027,
+            "preprocess_time_ms": 2.106667001498863,
+            "postprocess_time_ms": 0.12100000094505958,
+            "detections_count": 0
+        },
+        {
+            "filename": "pm_103.jpg",
+            "inference_time_ms": 75.37066700024297,
+            "preprocess_time_ms": 1.974583003175212,
+            "postprocess_time_ms": 0.1290420004806947,
+            "detections_count": 2
+        },
+        {
+            "filename": "pm_102.jpg",
+            "inference_time_ms": 73.98183300028904,
+            "preprocess_time_ms": 1.9785000004048925,
+            "postprocess_time_ms": 0.1262500009033829,
+            "detections_count": 1
+        },
+        {
+            "filename": "po_57.jpg",
+            "inference_time_ms": 75.57283400092274,
+            "preprocess_time_ms": 2.3977079981705174,
+            "postprocess_time_ms": 0.14170900249155238,
+            "detections_count": 1
+        },
+        {
+            "filename": "pv_4.jpg",
+            "inference_time_ms": 77.93629200023133,
+            "preprocess_time_ms": 2.03079199854983,
+            "postprocess_time_ms": 0.15379199976450764,
+            "detections_count": 7
+        },
+        {
+            "filename": "pm_101.jpg",
+            "inference_time_ms": 74.45449999795528,
+            "preprocess_time_ms": 2.0982910027669277,
+            "postprocess_time_ms": 0.13404200217337348,
+            "detections_count": 0
+        },
+        {
+            "filename": "po_56.jpg",
+            "inference_time_ms": 76.5682499986724,
+            "preprocess_time_ms": 2.08037499760394,
+            "postprocess_time_ms": 0.14458300211117603,
+            "detections_count": 0
+        },
+        {
+            "filename": "pm_105.jpg",
+            "inference_time_ms": 74.82666699797846,
+            "preprocess_time_ms": 2.2304580015770625,
+            "postprocess_time_ms": 0.19050000264542177,
+            "detections_count": 1
+        },
+        {
+            "filename": "pv_1.jpg",
+            "inference_time_ms": 80.81354199748603,
+            "preprocess_time_ms": 2.007999999477761,
+            "postprocess_time_ms": 0.1683329974184744,
+            "detections_count": 2
+        },
+        {
+            "filename": "pm_104.jpg",
+            "inference_time_ms": 74.02895899940631,
+            "preprocess_time_ms": 1.968415999726858,
+            "postprocess_time_ms": 0.1454579978599213,
+            "detections_count": 3
+        }
+    ],
+    "avg_latency_ms": 78.02248754942411
+}
