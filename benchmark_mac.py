@@ -31,7 +31,7 @@ class BenchmarkSession:
         filepath = os.path.join(folder, f"bench_{self.session_id}.json")
         with open(filepath, 'w') as f:
             json.dump(asdict(self), f, indent=4)
-        print(f"✅ Session saved to {filepath}")
+        print(f"Session saved to {filepath}")
 
 # 2. The Benchmarking Engine
 class MalariaBenchmarker:
@@ -53,7 +53,7 @@ class MalariaBenchmarker:
         
         images = [f for f in os.listdir(self.data_path) if f.endswith(('.jpg', '.png', '.jpeg'))]
         if not images:
-            print("❌ No images found in test_data folder!")
+            print("No images found in test_data folder!")
             return
 
         session = BenchmarkSession(
@@ -66,7 +66,7 @@ class MalariaBenchmarker:
         )
 
         # WARM-UP (Crucial for accurate benchmarking)
-        print("🔥 Warming up model...")
+        print(" Warming up model...")
         self.model.predict(os.path.join(self.data_path, images[0]), verbose=False)
 
         # INFERENCE LOOP
@@ -90,7 +90,7 @@ class MalariaBenchmarker:
 
         session.avg_latency_ms = total_inf_time / len(images)
         session.save()
-        print(f"📊 Benchmark Complete. Avg Latency: {session.avg_latency_ms:.2f}ms")
+        print(f" Benchmark Complete. Avg Latency: {session.avg_latency_ms:.2f}ms")
 
 if __name__ == "__main__":
     # Update these paths to your actual files
