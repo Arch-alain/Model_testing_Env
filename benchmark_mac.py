@@ -77,10 +77,18 @@ class MalariaBenchmarker:
             # Run Inference
             results = self.model.predict(img_path, verbose=False)[0]
             
-            # Extract Timings (in ms)
+            # Extract Timings from the results object (values are in ms)
+            # results.speed is a dict: {'preprocess': float, 'inference': float, 'postprocess': float}
+            inf_ms = results.speed.get('inference', 0.0)
+            pre_ms = results.speed.get('preprocess', 0.0)
+            post_ms = results.speed.get('postprocess', 0.0)
+
+            # Correctly initialize the dataclass with all required arguments
             metrics = InferenceResult(
                 filename=img_name,
-
+                inference_time_ms=inf_ms,
+                preprocess_time_ms=pre_ms,
+                postprocess_time_ms=post_ms,
                 detections_count=len(results.boxes)
             )
             
